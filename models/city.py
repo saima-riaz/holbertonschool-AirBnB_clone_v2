@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" City Module """
+""" City Module fro Basemodel """
 from models.base_model import BaseModel, Base
 from sqlalchemy import Column, String, ForeignKey
 
