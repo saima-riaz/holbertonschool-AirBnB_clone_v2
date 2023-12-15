@@ -1,20 +1,19 @@
 #!/usr/bin/python3
-"""Start a Flask web application on localhost"""
-
-
+"""flask import """
 from flask import Flask
 
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
-def hello():
-    """Display a message when making a request to root"""
+@app.route("/", strict_slashes=False)
+def home():
     return 'Hello HBNB!'
-@app.route('/hbnb', strict_slashes=False)
-def hbnb():
-    return 'HBNB'
 
-if __name__ == '__main__':
-    """run app flask"""
-    app.run(host='0.0.0.0', port=5000)
+
+@app.route("/hbnb", strict_slashes=False)
+def dislplayHbnb():
+    return "HBNB"
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
