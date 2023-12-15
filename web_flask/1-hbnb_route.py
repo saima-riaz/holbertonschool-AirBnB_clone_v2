@@ -11,7 +11,9 @@ app = Flask(__name__)
 def hello():
     """Display a message when making a request to root"""
     return 'Hello HBNB!'
-
+@app.route('/hbnb', strict_slashes=False)
+def hbnb():
+    return 'HBNB'
 
 if __name__ == '__main__':
     """run app flask"""
